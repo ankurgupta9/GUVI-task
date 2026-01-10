@@ -1,16 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Task One</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabook</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="flex justify-center items-center h-screen">
-    <button class="bg-purple-500 text-white hover:uppercase rounded-full hover:bg-purple-700 m-4 p-4" scr="#">Click Me</button>
+<header class="navbar">
+  <div class="logo"><img src="images/Logo (1).png" alt="Traveller" width="120px" /></div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Destination</a>
+    <a href="#">Tour</a>
+    <a href="#">Blog</a>
+  </nav>
+  <div class="nav-actions">
+    <a class="login" href="#">Login</a>
+    <button class="btn-primary">Sign up</button>
+  </div>
+</header>
+
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>
+      Get started your exciting
+      <span>journey</span> with us.
+    </h1>
+    <p>
+      A Team of experienced tourism professionals will provide you
+      with the best advice and tips for your desire place.
+    </p>
+    <button class="btn-outline">Discover Now</button>
+  </div>
+
+  <div class="hero-image">
+    <img src="images/hero.png" alt="Traveller" />
+  </div>
+</section>
+
+
+<section class="search-box">
+  <div class="search-item">
+    <h4>Location</h4>
+    <p>Where are you going</p>
+  </div>
+  <div class="search-item">
+    <h4>Date</h4>
+    <p>When you will go</p>
+  </div>
+  <div class="search-item">
+    <h4>Guest</h4>
+    <p>Number of guest</p>
+  </div>
+  <button class="btn-primary">Explore Now</button>
+</section>
+
+
+<section class="features">
+  <div class="features-img">
+  <h2 class="head">Things you need <span>to do</span></h2> <img src="images/plane.png" alt="Traveller" width="100px" />
+  </div>
+  <p class="section-desc">
+    We ensure that you'll embark on a perfectly planned,
+    safe vacation at a price you can afford.
+  </p>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <img src="images/sign.png" alt="Traveller" width="30px" />
+      <h3 style="padding-top: 10px; padding-bottom: 10px;">Sign Up</h3>
+      <p>Completes all the work associated with planning and processing</p>
     </div>
+    <div class="feature-card">
+      <img src="images/money.png" alt="Traveller" width="30px" />
+      <h3 style="padding-top: 10px; padding-bottom: 10px;">Worth of Money</h3>
+      <p>After successful access then book from exclusive deals & pricing</p>
+    </div>
+    <div class="feature-card">
+      <img src="images/travel.png" alt="Traveller" width="30px" />
+      <h3 style="padding-top: 10px; padding-bottom: 10px;">Exciting Travel</h3>
+      <p>Start and explore a wide range of exciting travel experience.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="deals">
+  <h2 class="head">Exclusive <span>deals & discounts</span></h2>
+  <p>Discover our fantastic early booking discounts & start planning your journey.</p>
+
+  <div class="deal-grid">
+    <div class="deal-card">
+      <img src="images/madrid.png" />
+      <h4>Madrid</h4>
+      <span>$850</span>
+    </div>
+    <div class="deal-card">
+      <img src="images/firenze.png" />
+      <h4>Firenze</h4>
+      <span>$750</span>
+    </div>
+    <div class="deal-card">
+      <img src="images/paris.png" />
+      <h4>Paris</h4>
+      <span>$599</span>
+    </div>
+    <div class="deal-card">
+      <img src="images/london.png" />
+      <h4>London</h4>
+      <span>$850</span>
+    </div>
+  </div>
+</section>
+
+<section class="vacation">
+  <div class="vacation-header">
+    <h2>
+      Best <span>vacation plan</span>
+    </h2>
+    <p>
+      Plan your perfect vacation with our travel agency.
+      Choose among hundreds of all-inclusive offers!
+    </p>
+
+    <div class="vacation-arrows">
+      <button class="arrow left">&#8592;</button>
+      <button class="arrow right">&#8594;</button>
+    </div>
+  </div>
+
+  <div class="vacation-cards">
+    <div class="vacation-card">
+      <img src="images/rome.png" alt="Rome">
+      <div class="card-info">
+        <h4>Rome, Italy</h4>
+        <span class="price">$5,42k</span>
+      </div>
+      <div class="card-meta">
+        <span>10 Days Trip</span>
+        <span>⭐ 4.8</span>
+      </div>
+    </div>
+
+    <div class="vacation-card">
+      <img src="images/london1.png" alt="London">
+      <div class="card-info">
+        <h4>London, UK</h4>
+        <span class="price">$2,42k</span>
+      </div>
+      <div class="card-meta">
+        <span>07 Days Trip</span>
+        <span>⭐ 4.7</span>
+      </div>
+    </div>
+
+    <div class="vacation-card">
+      <img src="images/osaka.png" alt="Osaka">
+      <div class="card-info">
+        <h4>Osaka, Japan</h4>
+        <span class="price">$5,42k</span>
+      </div>
+      <div class="card-meta">
+        <span>10 Days Trip</span>
+        <span>⭐ 4.8</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="testimonial">
+  <div class="testimonial-text">
+    <h2>What people say <span>about us.</span></h2>
+    <p>Our Clients send us bunch of smiles with our services and we love them.</p>
+  </div>
+
+  <div class="testimonial-card">
+    <img src="images/Client-1.png" alt="Traveller" width="500px" />
+  </div>
+</section>
+
+
+<section class="blog">
+  <h2 class="head">Get update with <span>latest blog</span></h2>
+
+  <div class="blog-grid">
+    <div class="blog-card">
+      <img src="images/Blog1.png">
+      <h4>The Amazing Difference a Year of Travelling</h4>
+      <p>July 27, 2021</p>
+    </div>
+    <div class="blog-card">
+      <img src="images/Blog2.png">
+      <h4>Travel far enough, you meet yourself</h4>
+      <p>July 27, 2021</p>
+    </div>
+    <div class="blog-card">
+      <img src="images/Blog3.png">
+      <h4>How to Save Money While Visiting Africa</h4>
+      <p>July 27, 2021</p>
+    </div>
+    <div class="blog-card">
+      <img src="images/Blog4.png">
+      <h4>Reflections on 5 Months of Travel</h4>
+      <p>July 27, 2021</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="subscribe-section">
+  <div class="subscribe-box">
+    <h2>
+      Subscribe and get exclusive <br />
+      deals & offer
+    </h2>
+
+    <div class="subscribe-input">
+      <input type="email" placeholder="Enter your mail" />
+      <button style="margin: 5px; border-radius: 7px;">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h3>Trabook</h3>
+      <p>
+        Book your trip in minute, get full <br />
+        Control for much longer.
+      </p>
+
+      <div class="socials">
+        <span><svg width="6" height="13" viewBox="0 0 6 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.40203 2.18972C5.08977 2.09093 4.73068 2.02508 4.40281 2.02508C3.99688 2.02508 3.12256 2.30496 3.12256 2.84828V4.14894H5.19906V6.33865H3.12256V12.381H1.03044V6.33865H0V4.14894H1.03044V3.04585C1.03044 1.38298 1.74863 0 3.48165 0C4.07494 0 5.13661 0.0329281 5.71429 0.24696L5.40203 2.18972Z" fill="#444444"/>
+</svg>
+</span>
+        <span style="background-color:#ff7a33;"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5667 0H2.5C1.12167 0 0 1.12167 0 2.5V14.5667C0 15.9453 1.12167 17.0667 2.5 17.0667H14.5667C15.9453 17.0667 17.0667 15.9453 17.0667 14.5667V2.5C17.0667 1.12167 15.9453 0 14.5667 0ZM16.0667 14.5667C16.0667 15.3937 15.3937 16.0667 14.5667 16.0667H2.5C1.673 16.0667 1 15.3937 1 14.5667V2.5C1 1.673 1.673 1 2.5 1H14.5667C15.3937 1 16.0667 1.673 16.0667 2.5V14.5667Z" fill="white"/>
+<path d="M14.0334 2.0332C13.4821 2.0332 13.0334 2.48187 13.0334 3.0332C13.0334 3.58454 13.4821 4.0332 14.0334 4.0332C14.5848 4.0332 15.0334 3.58454 15.0334 3.0332C15.0334 2.48187 14.5848 2.0332 14.0334 2.0332Z" fill="white"/>
+<path d="M8.53345 4.0332C6.05211 4.0332 4.03345 6.05187 4.03345 8.5332C4.03345 11.0145 6.05211 13.0332 8.53345 13.0332C11.0148 13.0332 13.0334 11.0145 13.0334 8.5332C13.0334 6.05187 11.0148 4.0332 8.53345 4.0332ZM8.53345 12.0332C6.60345 12.0332 5.03345 10.4632 5.03345 8.5332C5.03345 6.6032 6.60345 5.0332 8.53345 5.0332C10.4634 5.0332 12.0334 6.6032 12.0334 8.5332C12.0334 10.4632 10.4634 12.0332 8.53345 12.0332Z" fill="white"/>
+</svg>
+</span>
+        <span><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.6098 1.50146C15.0293 1.7561 14.4107 1.92488 13.7659 2.00683C14.4293 1.61073 14.9356 0.988293 15.1737 0.238049C14.5551 0.606829 13.8722 0.867317 13.1444 1.01268C12.5571 0.387317 11.72 0 10.8068 0C9.03512 0 7.60878 1.43805 7.60878 3.20098C7.60878 3.45463 7.63024 3.69854 7.68293 3.93073C5.02244 3.80098 2.66829 2.52585 1.08683 0.583415C0.810732 1.06244 0.648781 1.61073 0.648781 2.20098C0.648781 3.30927 1.21951 4.29171 2.07024 4.86049C1.5561 4.85073 1.05171 4.70146 0.62439 4.46634C0.62439 4.4761 0.62439 4.48878 0.62439 4.50146C0.62439 6.05659 1.73366 7.34829 3.18829 7.64585C2.9278 7.71707 2.6439 7.75122 2.34927 7.75122C2.14439 7.75122 1.93756 7.73951 1.74341 7.69659C2.15805 8.9639 3.33463 9.89561 4.73366 9.92585C3.64488 10.7776 2.26244 11.2907 0.765854 11.2907C0.503415 11.2907 0.251707 11.279 0 11.2468C1.41756 12.161 3.09756 12.6829 4.90927 12.6829C10.798 12.6829 14.0176 7.80488 14.0176 3.57659C14.0176 3.43512 14.0127 3.29854 14.0059 3.16293C14.641 2.7122 15.1746 2.14927 15.6098 1.50146Z" fill="#444444"/>
+</svg>
+</span>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Logistic</a>
+      <a href="#">Privacy & Policy</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <a href="#">Help/FAQ</a>
+      <a href="#">Press</a>
+      <a href="#">Affiliates</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>More</h4>
+      <a href="#">Press Centre</a>
+      <a href="#">Our Blog</a>
+      <a href="#">Low fare tips</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright, Trabook 2022. All rights reserved.</p>
+    <p>Terms & Conditions</p>
+  </div>
+</footer>
+
 
 </body>
 </html>
