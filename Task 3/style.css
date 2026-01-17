@@ -15,11 +15,12 @@ body {
 
 pre{
   color:#3a2ffe;
+  margin-bottom: 10px;
 }
 
 .header {
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   background: #4f46e5;
   color: #fff;
   display: flex;
@@ -50,6 +51,43 @@ pre{
   border-radius: 10px;
   border-width: 5px;
 }
+
+.hidden {
+  display: none !important;
+}
+
+
+.start-screen {
+  position: fixed;              /* 🔥 KEY LINE */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #4f46e5;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+
+  z-index: 1000;               /* 🔥 stays above everything */
+}
+
+
+.start-screen button {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #4f46e5;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 
 
 .card {
@@ -93,11 +131,29 @@ pre{
   border: 2px solid #4f46e5;
 }
 
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+
 /* Responsive */
 @media (max-width: 500px) {
   .game-board {
     grid-template-columns: repeat(3, 1fr);
-    margin: 10px;
+    margin: 20px auto;
+    align-items: center;
+    text-align: center;
     width: 250px;
   }
 }

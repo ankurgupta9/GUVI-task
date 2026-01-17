@@ -8,23 +8,39 @@
 </head>
 <body>
 
+<div id="startScreen" class="start-screen">
+  <h1>Fruit Board Game 🍉</h1>
+  <p>Match all pairs before time runs out</p>
+  <button id="startBtn">Start Game</button>
+</div>
+
+<main id="gameUI" class="hidden">
+
   <header class="header">
     <h1>Fruit Board Game</h1>
     <button id="restartBtn">Restart</button>
   </header>
 
-  <main>
-    <div class="game-board" id="gameBoard"></div>
-  </main>
+  <div class="stats">
+    <div>⏳ Time Left: <span id="timeLeft">05:00</span></div>
+    <div>⏱ Time: <span id="time">0</span>s</div>
+    <div>🔁 Flips: <span id="flips">0</span></div>
+    <div>🏆 Best: <span id="best">--</span></div>
+  </div>
 
-<pre>
+  <div class="game-board" id="gameBoard"></div>
+
+  <pre>
 <b>How To Play</b>
 - Click on any card to flip it
 - Flip two cards at a time
 - If cards match, they stay open
 - If not, they flip back
-- Match all pairs to win
-</pre>
+- Match all pairs to win within time
+  </pre>
+
+</main>
+
 
   <script src="script.js"></script>
 </body>
