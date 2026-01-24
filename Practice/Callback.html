@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="input1" type="text" placeholder="First Name" />
+    <input id="input2" type="text" placeholder="Last Name" />
+    <button id="processButton">Process</button>
+    <textarea id="outputArea"></textarea>
+    <script>
+      document
+        .getElementById("processButton")
+        .addEventListener("click", function () {
+          const f = document.getElementById("input1").value;
+          const l = document.getElementById("input2").value;
+
+          buildFullName(f, l, function (result) {
+            document.getElementById("outputArea").value = result;
+          });
+        });
+
+      function buildFullName(fName, lName, callback) {
+        setTimeout(function () {
+          callback("Full Name: " + fName + " " + lName);
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>
