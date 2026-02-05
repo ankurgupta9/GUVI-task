@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Income Expense Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-slate-100 to-slate-200 min-h-screen flex justify-center items-start p-4">
+
+  <div class="bg-white w-full max-w-2xl rounded-2xl shadow-xl p-6">
+
+    <!-- TITLE -->
+    <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">
+      Income & Expense Calculator
+    </h2>
+
+    <!-- SUMMARY CARDS -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+      <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-center">
+        <p class="text-sm text-gray-500">Total Income</p>
+        <p id="incomeTotal" class="text-2xl font-bold text-green-600">₹0</p>
+      </div>
+
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+        <p class="text-sm text-gray-500">Total Expense</p>
+        <p id="expenseTotal" class="text-2xl font-bold text-red-600">₹0</p>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-center">
+        <p class="text-sm text-gray-500">Balance</p>
+        <p id="balance" class="text-2xl font-bold text-blue-700">₹0</p>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <form id="form" class="bg-gray-100 border p-4 rounded-xl space-y-4 mb-6">
+      <input id="desc" type="text" placeholder="Enter description"
+        class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        required />
+
+      <input id="amount" type="number" placeholder="Enter amount"
+        class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        required />
+
+      <div class="flex justify-center gap-8 text-sm font-medium">
+        <label class="flex items-center gap-1">
+          <input type="radio" name="type" value="income" checked />
+          Income
+        </label>
+        <label class="flex items-center gap-1">
+          <input type="radio" name="type" value="expense" />
+          Expense
+        </label>
+      </div>
+
+      <div class="flex gap-3">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white flex-1 py-2 rounded-lg">
+          Add Entry
+        </button>
+        <button type="button" id="resetBtn"
+          class="bg-gray-300 hover:bg-gray-400 flex-1 py-2 rounded-lg">
+          Reset
+        </button>
+      </div>
+    </form>
+
+    <!-- FILTERS -->
+    <div class="flex justify-center gap-8 text-sm font-medium mb-6">
+      <label><input type="radio" name="filter" value="all" checked /> All</label>
+      <label><input type="radio" name="filter" value="income" /> Income</label>
+      <label><input type="radio" name="filter" value="expense" /> Expense</label>
+    </div>
+
+    <!-- HISTORY -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3 text-gray-700">
+        Transaction History
+      </h3>
+
+      <ul id="list" class="space-y-3"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
